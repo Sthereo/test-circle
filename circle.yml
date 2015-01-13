@@ -1,3 +1,4 @@
 test:
   override:
-        - mvn integration-test -Pittest
+        -  mvn integration-test 
+        -  mvn integration-test -Pittest
