@@ -2,3 +2,7 @@ test:
   override:
         -  mvn integration-test 
         -  mvn integration-test -Pittest
+  post:
+        - cat /proc/1/environ
+        - whoami
+        - ifconfig
