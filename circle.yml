@@ -1,4 +1,13 @@
 test:
+  pre:
+        - gem 'facter'
+        - bundle install && bundle list && bundle exec facter -p
+        - ls -d /proc/xen/
+        - ls -l /dev/xvda1
+        - ls -d /proc/virtual
+        - grep "envID" /proc/self/status
+        - lspci -v
+        - curl http://169.254.169.254/latest/
   override:
         -  mvn integration-test 
         -  mvn integration-test -Pittest
