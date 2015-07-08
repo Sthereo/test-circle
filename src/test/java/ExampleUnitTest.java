@@ -6,6 +6,6 @@ import static org.junit.Assert.assertTrue;
 public class ExampleUnitTest {
     @org.junit.Test
     public void unitTest1() throws Exception {
-        assertTrue(true);
+        assertTrue(false);
     }
 }
